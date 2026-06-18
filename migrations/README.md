@@ -18,5 +18,5 @@ Cómo ejecutar
      psql "$env:SUPABASE_DB_URL" -f migrations/supabase-migrations.sql
 
 Notas
-- La `service_role` key permite saltar RLS y debe usarse solo en entornos server-side controlados.
+- La Secret key (anteriormente service_role key) permite saltar RLS y debe usarse solo en entornos server-side controlados.
 - Si querés, puedo ejecutar las migraciones por vos si me das la `SUPABASE_DB_URL` (o hacerlo en tu máquina siguiendo las instrucciones).

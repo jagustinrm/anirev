@@ -8,8 +8,8 @@ This document collects the exact steps and the environment variables required to
 
 2) Important environment variables (set these in Project Settings → Environment Variables on Vercel)
 - NEXT_PUBLIC_SUPABASE_URL = https://<YOUR-PROJECT>.supabase.co
-- NEXT_PUBLIC_SUPABASE_ANON_KEY = <anon_public_key>
-- SUPABASE_SERVICE_ROLE_KEY = <service_role_key>    (server-only; do NOT expose in client)
+- NEXT_PUBLIC_SUPABASE_ANON_KEY = <Publishable_key> (anteriormente llamada anon key)
+- SUPABASE_SERVICE_ROLE_KEY = <Secret_key> (anteriormente llamada service_role key; server-only; no exponer en el cliente)
 - SUPABASE_DB_URL = postgres://<user>:<pass>@<host>:5432/<db>  (only if you plan to run migrations from CI)
 - NEXT_PUBLIC_APP_URL = https://<your-vercel-domain>
 
